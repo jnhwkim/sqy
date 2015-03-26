@@ -157,3 +157,6 @@ label.percent {
   color: red;
   font-weight: bold;
 }
+.participant_number {
+  font-size: 20pt;
+}
