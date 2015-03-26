@@ -13,7 +13,7 @@ module.exports = {
     for (i = 1; i <= req.body.numParticipants; i++) {
       if (0 == (i-1) % PRESET.length) {
         seed = Math.floor(Math.random() * PRESET.length);
-        _type = _type % 3 + 1;
+        _type = _type % 2 + 1;
       } else {
         seed = (seed + 1) % PRESET.length;
       }

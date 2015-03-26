@@ -7,12 +7,16 @@ var Settings = mongoose.model( 'Settings' );
 var Allocation = mongoose.model( 'Allocation' );
 
 exports.index = function ( req, res, next ){
+  res.render( 'index' );
+};
+
+exports.intro = function ( req, res, next ){
   Settings.findOne()
           .sort( '-updated_at' )
           .exec(function (err, settings) {
     if (err) return handleError(err);
     else if (settings) {
-      res.render( 'index', {
+      res.render( 'intro', {
         type: 1,
         numParticipants: settings.numParticipants,
         numStimuli: settings.numStimuli,

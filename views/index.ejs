@@ -11,47 +11,25 @@
 <div class="container">
   <h2 class="text-center">Welcome!<a class="admin" href="/settings">.</a></h2>
   <div class="row">
-    <div class="span2"></div>
+    <div class="span2">
+
+    </div>
     <div class="span8">
-      <form id="startForm" class="form-horizontal" method="get" action="/test">
-        <blockquote>
-          <p>안녕하세요.</p>
-          <p>실험에 참가해 주셔서 매우 감사합니다.</p>
-          
-          <h4>실험설명</h4>
-          <p>총 2 문제 세트가 있으며, 한 세트에는 2 문제로 구성되어 있습니다. 한 문제당 <%= duration / 60 / 2 %> 분의 시간이 주어집니다.</p>
-          <p>단, [문제 1]을 문제1을 푸는 동안에는 [문제 2]을 보거나 풀 수 없습니다.</p>
-          <p>피험자는 무작위로 선택되어 아래 세가지 중 한 가지 방법으로 문제를 풀게 됩니다.</p>
-          <br/>
-          <ul>
-            <li><b>Type 1:</b> [문제 1]의 제한 시간 <%= duration / 60 / 2 %> 분이 지나면 자동적으로 [문제 2]로 넘어갑니다.</li>
-            <li><b>Type 2:</b> 자유롭게 [문제 1]과 [문제 2]를 전환할 수 있지만 <%= timeset / 60 / 2 %> 분이 지나면 넘어갈 수 없습니다.</li>
-            <li><b>Type 3:</b> <%= timeset / 60 / 2 %> 분 마다 강제적으로 문제가 전환 됩니다.</li>
-          </ul>
-          <br/>
-          <p>각 문제에서 입력한 내용은 자동적으로 저장됩니다.</p>
-          
-          <h4>평가방식</h4>
-          <p>주어진 문제에 대한 창의적인 해결 방안을 제시하는 과제입니다.</p>
-          <p>창의적이고 실용적인 방안을 가능한 많이 제시해주십시오.</p>
-
-          <h4>피험자 번호</h4>
-          <p>준비가 다 되시면 실험자의 안내에 따라 피험자 번호를 입력 하십시오.</p>
-          <br/>
-
-          <div class="form-group">
-            <label for="pid">Participant ID:</label>
-            <div class="col-sm-4">
-              <input id="pid" class="form-control" type="number" name="pid"/>
-            </div>
-          </div>
-        </blockquote>
-        <div class="form-group text-center">
-          <br/>
-          <p class="text-center">“START” 버튼을 누르면 실험이 시작됩니다.</p>
-          <br/>
-          <button type="submit" class="btn btn-success btn-large">START</button>
-        </div>
+      <br/>
+      <p>본 연구에서 여러분은 사건을 읽고 ‘유죄’ 와 ‘유죄가 아닌지’에 대해서 판단을 할 예정입니다.</p>
+      <p>실험에 앞서 아래의 내용을 숙지해주시기 바랍니다.</p>
+      
+      <div class="well">
+        <p>헌법과 형사소송법의 <b>‘무죄추정의 원칙’</b>에 따라 피고인은 유죄의 판결을 선고받아 확정될 때까지는 무죄로 추정됩니다. 피고인은 자신이 무죄임을 증명하여야 할 의무가 없습니다. 피고인을 유죄로 인정하기 위해서는 합리적인 의심의 여지가 없을 정도로 피고인이 유죄임을 검사가 증명하여야 합니다.</p>
+        <p><b>‘합리적인 의심의 여지가 없을 정도’</b>라는 의미는 공소사실에 대해 논리적 또는 이성적으로 의심이 제기되지 않는 상태를 말합니다. 따라서 여러분이 이성과 상식을 동원해서 모든 증거들을 꼼꼼히 비교검토한 후에도 공소사실이 맞다는 확신이 든다면 그 때 비로소 합리적인 의심의 여지가 없이 피고인을 유죄라고 결정할 수 있습니다. 이와 반대로 공소사실에 대한 합리적인 의심의 여지가 있다고 생각하신다면 여러분은 피고인이 ‘유죄가 아님’으로 결정해야 합니다.</p>
+        <p>피고인은 진술거부권이 있기 때문에 형사재판에서 일체의 진술을 하지 아니하거나 개개의 질문에 대하여 대답을 거부할 수 있습니다. 진술을 거부하는 것은 무죄인 것으로 추정되는 피고인의 권리이므로 피고인이 진술을 거부하더라도 이를 피고인에게 불리한 판단자료로 삼아서는 아니 됩니다.</p>
+      </div>
+      <div class="form-group text-center">
+        <br/>
+        <p class="text-center">위의 내용을 이해하셨다면 다음 버튼을 누르시기 바랍니다.</p>
+        <br/>
+        <a type="button" class="btn btn-success btn-large" href="/intro">START</a>
+      </div>
       </form>
     </div>
     <div class="span2"></div>

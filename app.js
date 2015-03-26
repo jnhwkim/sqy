@@ -31,6 +31,7 @@ app.use( bodyParser.urlencoded({ extended : true }));
 // Routes
 app.get('/', routes.index);
 app.get('/welcome', routes.index);
+app.get('/intro', routes.intro);
 app.get('/thanks/:pid', routes.thanks);
 app.get('/test', routes.test);
 app.get('/settings', routes.settings);
