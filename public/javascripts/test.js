@@ -57,8 +57,17 @@ $(function() {
   btnNext.on('click', function (e) {
     if (!confirm('문제 풀이를 완료 하시겠습니까?'))
       return false;
-    else
+    else {
+      switch (parseInt(btnSwitch.attr('status'))) {
+      case 1:
+        saveForm(form1);
+        break;
+      case 0:
+        saveForm(form2);
+        break;
+      }
       return true;
+    }
   });
 
   $('.form-percent input[name="guilty"], .form-percent input[name="not_guilty"]').change(function(e){
